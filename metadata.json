@@ -1,0 +1,5 @@
+{
+  "name": "Machine Learning Visualizer",
+  "description": "An interactive web application for visualizing and understanding machine learning algorithms. Train Neural Network, KNN, and SVM models in real-time, fine-tune their parameters, and watch the decision boundaries evolve. Leverage the integrated AI Analyst to ask questions, get insights on your model's performance, or even generate entirely new and custom datasets with a simple prompt.",
+  "requestFramePermissions": []
+}

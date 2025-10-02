@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF--8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a more modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a202c; /* dark gray */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568; /* medium gray */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #718096; /* light gray */
+      }
+      
+      /* Styles for AI Analyst Markdown content */
+      .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 0.3em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+      }
+      .markdown-content p {
+          line-height: 1.6;
+      }
+      .markdown-content ul, .markdown-content ol {
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        list-style-position: outside;
+      }
+      .markdown-content ul {
+          list-style-type: disc;
+      }
+      .markdown-content ol {
+          list-style-type: decimal;
+      }
+      .markdown-content li {
+        margin-bottom: 0.25em;
+      }
+      .markdown-content code {
+        background-color: #1f2937; /* gray-800 */
+        color: #e5e7eb; /* gray-200 */
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 85%;
+        border-radius: 6px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+      .markdown-content pre {
+        background-color: #111827; /* gray-900 */
+        border-radius: 8px;
+        padding: 0.75rem;
+        overflow-x: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .markdown-content pre code {
+        background-color: transparent;
+        padding: 0;
+        font-size: 100%;
+      }
+      .markdown-content strong {
+          color: #f9fafb; /* gray-50 */
+          font-weight: 600;
+      }
+      .markdown-content blockquote {
+          border-left: 4px solid #4a5568; /* gray-600 */
+          padding-left: 1rem;
+          color: #9ca3af; /* gray-400 */
+          margin-left: 0;
+          margin-right: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+    "react-markdown": "https://esm.sh/react-markdown@9?deps=react@19",
+    "remark-gfm": "https://esm.sh/remark-gfm@4"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
