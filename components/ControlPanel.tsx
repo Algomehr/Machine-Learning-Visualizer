@@ -65,21 +65,20 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
                  <h2 className="text-xl font-bold text-gray-100">Controls</h2>
             </div>
 
-            <div className="space-y-3">
-                <label className="block text-sm font-medium text-gray-400">Algorithm</label>
-                <div className="grid grid-cols-3 gap-2">
+            <div className="space-y-2">
+                <label htmlFor="algorithm-select" className="block text-sm font-medium text-gray-400">Algorithm</label>
+                <select
+                    id="algorithm-select"
+                    value={algorithm}
+                    onChange={(e) => setAlgorithm(e.target.value as Algorithm)}
+                    className="w-full bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm p-2"
+                >
                     {ALGORITHMS.map(algo => (
-                        <button
-                            key={algo.id}
-                            onClick={() => setAlgorithm(algo.id)}
-                            className={`px-3 py-2 text-sm font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 ${
-                                algorithm === algo.id ? 'bg-cyan-700 text-white' : 'bg-gray-700 hover:bg-gray-600 text-gray-300'
-                            }`}
-                        >
+                        <option key={algo.id} value={algo.id}>
                             {algo.name}
-                        </button>
+                        </option>
                     ))}
-                </div>
+                </select>
             </div>
 
             {isTrainable && (
