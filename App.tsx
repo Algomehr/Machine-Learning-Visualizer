@@ -209,6 +209,9 @@ const App: React.FC = () => {
                         <SparklesIcon className="w-6 h-6" />
                         <span className="hidden sm:inline">AI Analyst</span>
                     </button>
+                     <span className="text-sm text-gray-400 hidden lg:inline">
+                        Developed by <a href="https://mehrdad.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 underline transition-colors">Mehrdad Rajabi</a>
+                    </span>
                     <a href="https://github.com/google/genai-api" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                         <GithubIcon className="w-7 h-7" />
                     </a>
